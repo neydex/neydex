@@ -1,0 +1,135 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #222;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    overflow-x: hidden;
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+section2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color:#329cff;
+    display: inline;
+}
+@media only screen and (max-width: 480px) {
+    section2 {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+}
+section2 p{
+    margin-left: 2rem;
+}
+.blue1{
+    background-color: #0084ff;
+    color: #fff;
+}
+.blue2{
+    color: #fff;
+}
+
+.curve{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+  }
+  .curve::before{
+   content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #222;
+    transform: translate(85%, 60%);
+  }
+  .curve::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #0084ff;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+  }
+.curve2{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.curve2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #222;
+    transform: translate(-4%, 40%);
+    z-index: 1;
+}
+.curve2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #0084ff;
+    transform: translate(85%, 60%);
+  }
+.top{
+    margin-top: 10em;
+    font-size: small;
+}
+a{
+    color: #fff;
+    margin: 0.5em;
+}
+.inline{
+    display: inline;
+}
+h4{
+    margin: 0;
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1em;
+}
+section2 p{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-right: 1em;
+}
+section2 a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+section2 a{
+    text-decoration: none;
+    flex-grow: 1;
+    }
+}
